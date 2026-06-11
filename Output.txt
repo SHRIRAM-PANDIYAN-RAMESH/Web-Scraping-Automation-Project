@@ -1,0 +1,185 @@
+After running the program code, the output received is shown below:
+
+------------------------------------------------------------------------------------ Output in the VS Code Terminal ------------------------------------------------------------------------------------
+
+C:\Users\rames\Desktop\WARPE_Programs\Web_Scraping_Automation_Project_1>python flipkart_scraper.py
+Enter product name: wireless mouse
+
+Products Found:
+
+1. Koaty Core Wireless Mouse WM115 Ambidextrous Optical Mouse
+Price : 298
+----------------------------------------------------------------------------------------------------
+2. iBall GLIDR Ai1 Right Handed Optical Mouse USB Dongle,AI Dual BT, 3200 DPI, 7 Buttons, Auto Sleep
+Price : 499
+----------------------------------------------------------------------------------------------------
+3. Flipkart SmartBuy TC-M500 Ergonomic Optical Mouse
+Price : 2499
+----------------------------------------------------------------------------------------------------
+4. ZEBRONICS Pulse Ambidextrous Optical Mouse 1200DPI, Dual BT, Multi-Connect, Lightweight Comfort With Bluetooth
+Price : 4299
+----------------------------------------------------------------------------------------------------
+5. Portronics Toad 13 Ambidextrous Optical Mouse Runs on single AA Battery,30 Lakhs+ click life,Upto 1200 DPI, POR 1381
+Price : 315
+----------------------------------------------------------------------------------------------------
+6. EVOFOX Banshee 2 Ergonomic Optical  Gaming Mouse Tri-Mode 12000 DPI Pixart Sensor LCD Display Programmable
+Price : 999
+----------------------------------------------------------------------------------------------------
+7. ZEBRONICS Zeb- Jaguar Ambidextrous Optical Mouse High Precision, 4 Buttons, Plug & Play
+Price : 279
+----------------------------------------------------------------------------------------------------
+8. Frontech Wired USB Gaming Mouse | 1200 DPI | Rainbow RGB Lighting | 3 Function Buttons | Wired Ergonomic Optical  Gaming Mouse
+Price : 599
+----------------------------------------------------------------------------------------------------
+9. HP m10 Wired Ambidextrous Optical Mouse
+Price : 339
+----------------------------------------------------------------------------------------------------
+10. ZEBRONICS Zeb- Jaguar Ambidextrous Optical Mouse High Precision, 4 Buttons, Plug & Play
+Price : 499
+----------------------------------------------------------------------------------------------------
+11. Dyazo Plus Transparent Wireless Mouse | Adjustable DPI with Dual Mode | Rechargeable Ambidextrous Optical  Gaming Mouse
+Price : 1899
+----------------------------------------------------------------------------------------------------
+12. Frontech RGB Wireless Mouse – 2.4GHz/Bluetooth, 1600 DPI, Rechargeable Ambidextrous Optical Mouse With Bluetooth
+Price : 2799
+----------------------------------------------------------------------------------------------------
+13. HP M10 Wired Ambidextrous Optical Mouse
+Price : 329
+----------------------------------------------------------------------------------------------------
+14. Zorbes Ergonomic Keyboard Wrist Rest Pad Set Honeycomb Support for Typing Comfort TPE Keyboard Wrist Rest
+Price : 1190
+----------------------------------------------------------------------------------------------------
+15. Bestor Anime Series DragonWarrior Anime MousePad Dark Reaper Samurai MousePad 60cmx34cm Non Slip Base Mousepad
+Price : 295
+----------------------------------------------------------------------------------------------------
+16. Flipkart SmartBuy TC-M500 Ergonomic Optical Mouse
+Price : 900
+----------------------------------------------------------------------------------------------------
+17. sounce ErgoFlow | SNC-ERGOFLOW-WIRLSMUS-BLK Ergonomic Optical Mouse Upto 4000 DPI Adjustable 6 Button Control Rechargeable Battery Ergonomic Design Noise Free Clicking Premium With Bluetooth
+Price : 351
+----------------------------------------------------------------------------------------------------
+18. Koaty Value USB C Mouse WM315 Ambidextrous Optical  Gaming Mouse
+Price : 455
+----------------------------------------------------------------------------------------------------
+19. Gdgift NARUTO MOUSEPAD Non Slip Base Mousepad
+Price : 299
+----------------------------------------------------------------------------------------------------
+20. Portronics Toad 23 Ambidextrous Optical Mouse POR 1610
+Price : 1190
+----------------------------------------------------------------------------------------------------
+21. Iogitech B170 Wireless Mouse with USB Receiver,(Black) Wireless Ambidextrous Optical  Gaming Mouse
+Price : 439
+----------------------------------------------------------------------------------------------------
+22. Koaty USB Type C & USB A Mouse & Mousepad Combo – Silent Click, Multiple DPI Mouse Ambidextrous Optical  Gaming Mouse With Bluetooth
+Price : 1999
+----------------------------------------------------------------------------------------------------
+23. ZEBRONICS Pulse Ambidextrous Optical Mouse 1200DPI, Dual BT, Multi-Connect, Lightweight Comfort With Bluetooth
+Price : 367
+----------------------------------------------------------------------------------------------------
+24. sounce Ergonomic,Comfortable Gel Wrist Rest Support| MPWG Non Slip Base Mousepad
+Price : 1000
+----------------------------------------------------------------------------------------------------
+25. Gdgift Quotes BE_Happy_Buddha Gaming Mouse Pad - Computer Laptop PC| Wor Non Slip Base Mousepad
+Price : 348
+----------------------------------------------------------------------------------------------------
+26. sounce Ergonomic,Comfortable Gel Wrist Rest Support| MPWGBU Non Slip Base Mousepad
+Price : 430
+----------------------------------------------------------------------------------------------------
+27. Archer Tech Lab Precision 300 Wireless Mouse, Dual Mode Bluetooth /2.4GHz USB Nano Dongle Wireless Ambidextrous Optical  Gaming Mouse
+Price : 842
+----------------------------------------------------------------------------------------------------
+28. DELOX 115 Ambidextrous Optical  Gaming Mouse
+Price : 1263
+----------------------------------------------------------------------------------------------------
+29. Portronics Toad One Ambidextrous Optical Mouse Rechargeable with 6 Buttons, RGB Lights
+Price : 276
+----------------------------------------------------------------------------------------------------
+30. Gdgift BE DIFFERENT QUIVEE MSPD Non Slip Base Mousepad
+Price : 799
+----------------------------------------------------------------------------------------------------
+31. DELOX 108 Ambidextrous Optical  Gaming Mouse
+Price : 315
+----------------------------------------------------------------------------------------------------
+32. DELOX 109 Ambidextrous Optical  Gaming Mouse
+Price : 999
+----------------------------------------------------------------------------------------------------
+33. ZEBRONICS Panther Ambidextrous Optical Mouse 1600DPI, Silent Ergonomic, Power Saving Precision
+Price : 699
+----------------------------------------------------------------------------------------------------
+34. Portronics Toad 13 Ambidextrous Optical Mouse POR 1381, POR 1382
+Price : 1499
+----------------------------------------------------------------------------------------------------
+35. Logitech B175 Ambidextrous Optical Mouse Optical Tracking, 12-Months Battery Life, Ambidextrous
+Price : 463
+----------------------------------------------------------------------------------------------------
+36. Lenovo 120 Wired Ambidextrous Optical Mouse wired mouse
+Price : 699
+----------------------------------------------------------------------------------------------------
+37. DELOX 111 Ambidextrous Optical  Gaming Mouse
+Price : 116
+----------------------------------------------------------------------------------------------------
+38. DELOX 113 Ambidextrous Optical  Gaming Mouse
+Price : 349
+----------------------------------------------------------------------------------------------------
+39. Arctic Fox Pureview Transparent Ambidextrous Optical  Gaming Mouse
+Price : 348
+----------------------------------------------------------------------------------------------------
+40. ZEBRONICS Zeb Phero Wired Ambidextrous Optical  Gaming Mouse DPI Switch, High Precision, Plug & Play, 4 Buttons
+Price : 599
+----------------------------------------------------------------------------------------------------
+
+Data stored successfully in MySQL!
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------------------------------- Output Table in MySQL -------------------------------------------------------------------------------------------------------------------------------------
+
+mysql> use ecommerce_tracker;
+Database changed
+
+mysql> select * from scraped_products;
++----+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------+----------+---------------------+
+| id | product_name                                                                                                                                                                                   | price | website  | scraped_at          |
++----+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------+----------+---------------------+
+|  1 | Koaty Core Wireless Mouse WM115 Ambidextrous Optical Mouse                                                                                                                                     |   298 | Flipkart | 2026-06-11 13:37:04 |
+|  2 | iBall GLIDR Ai1 Right Handed Optical Mouse USB Dongle,AI Dual BT, 3200 DPI, 7 Buttons, Auto Sleep                                                                                              |   499 | Flipkart | 2026-06-11 13:37:04 |
+|  3 | Flipkart SmartBuy TC-M500 Ergonomic Optical Mouse                                                                                                                                              |  2499 | Flipkart | 2026-06-11 13:37:04 |
+|  4 | ZEBRONICS Pulse Ambidextrous Optical Mouse 1200DPI, Dual BT, Multi-Connect, Lightweight Comfort With Bluetooth                                                                                 |  4299 | Flipkart | 2026-06-11 13:37:04 |
+|  5 | Portronics Toad 13 Ambidextrous Optical Mouse Runs on single AA Battery,30 Lakhs+ click life,Upto 1200 DPI, POR 1381                                                                           |   315 | Flipkart | 2026-06-11 13:37:04 |
+|  6 | EVOFOX Banshee 2 Ergonomic Optical  Gaming Mouse Tri-Mode 12000 DPI Pixart Sensor LCD Display Programmable                                                                                     |   999 | Flipkart | 2026-06-11 13:37:04 |
+|  7 | ZEBRONICS Zeb- Jaguar Ambidextrous Optical Mouse High Precision, 4 Buttons, Plug & Play                                                                                                        |   279 | Flipkart | 2026-06-11 13:37:04 |
+|  8 | Frontech Wired USB Gaming Mouse | 1200 DPI | Rainbow RGB Lighting | 3 Function Buttons | Wired Ergonomic Optical  Gaming Mouse                                                                 |   599 | Flipkart | 2026-06-11 13:37:04 |
+|  9 | HP m10 Wired Ambidextrous Optical Mouse                                                                                                                                                        |   339 | Flipkart | 2026-06-11 13:37:04 |
+| 10 | ZEBRONICS Zeb- Jaguar Ambidextrous Optical Mouse High Precision, 4 Buttons, Plug & Play                                                                                                        |   499 | Flipkart | 2026-06-11 13:37:04 |
+| 11 | Dyazo Plus Transparent Wireless Mouse | Adjustable DPI with Dual Mode | Rechargeable Ambidextrous Optical  Gaming Mouse                                                                        |  1899 | Flipkart | 2026-06-11 13:37:04 |
+| 12 | Frontech RGB Wireless Mouse ? 2.4GHz/Bluetooth, 1600 DPI, Rechargeable Ambidextrous Optical Mouse With Bluetooth                                                                               |  2799 | Flipkart | 2026-06-11 13:37:04 |
+| 13 | HP M10 Wired Ambidextrous Optical Mouse                                                                                                                                                        |   329 | Flipkart | 2026-06-11 13:37:04 |
+| 14 | Zorbes Ergonomic Keyboard Wrist Rest Pad Set Honeycomb Support for Typing Comfort TPE Keyboard Wrist Rest                                                                                      |  1190 | Flipkart | 2026-06-11 13:37:04 |
+| 15 | Bestor Anime Series DragonWarrior Anime MousePad Dark Reaper Samurai MousePad 60cmx34cm Non Slip Base Mousepad                                                                                 |   295 | Flipkart | 2026-06-11 13:37:04 |
+| 16 | Flipkart SmartBuy TC-M500 Ergonomic Optical Mouse                                                                                                                                              |   900 | Flipkart | 2026-06-11 13:37:04 |
+| 17 | sounce ErgoFlow | SNC-ERGOFLOW-WIRLSMUS-BLK Ergonomic Optical Mouse Upto 4000 DPI Adjustable 6 Button Control Rechargeable Battery Ergonomic Design Noise Free Clicking Premium With Bluetooth |   351 | Flipkart | 2026-06-11 13:37:04 |
+| 18 | Koaty Value USB C Mouse WM315 Ambidextrous Optical  Gaming Mouse                                                                                                                               |   455 | Flipkart | 2026-06-11 13:37:04 |
+| 19 | Gdgift NARUTO MOUSEPAD Non Slip Base Mousepad                                                                                                                                                  |   299 | Flipkart | 2026-06-11 13:37:04 |
+| 20 | Portronics Toad 23 Ambidextrous Optical Mouse POR 1610                                                                                                                                         |  1190 | Flipkart | 2026-06-11 13:37:04 |
+| 21 | Iogitech B170 Wireless Mouse with USB Receiver,(Black) Wireless Ambidextrous Optical  Gaming Mouse                                                                                             |   439 | Flipkart | 2026-06-11 13:37:04 |
+| 22 | Koaty USB Type C & USB A Mouse & Mousepad Combo ? Silent Click, Multiple DPI Mouse Ambidextrous Optical  Gaming Mouse With Bluetooth                                                           |  1999 | Flipkart | 2026-06-11 13:37:04 |
+| 23 | ZEBRONICS Pulse Ambidextrous Optical Mouse 1200DPI, Dual BT, Multi-Connect, Lightweight Comfort With Bluetooth                                                                                 |   367 | Flipkart | 2026-06-11 13:37:04 |
+| 24 | sounce Ergonomic,Comfortable Gel Wrist Rest Support| MPWG Non Slip Base Mousepad                                                                                                               |  1000 | Flipkart | 2026-06-11 13:37:04 |
+| 25 | Gdgift Quotes BE_Happy_Buddha Gaming Mouse Pad - Computer Laptop PC| Wor Non Slip Base Mousepad                                                                                                |   348 | Flipkart | 2026-06-11 13:37:04 |
+| 26 | sounce Ergonomic,Comfortable Gel Wrist Rest Support| MPWGBU Non Slip Base Mousepad                                                                                                             |   430 | Flipkart | 2026-06-11 13:37:04 |
+| 27 | Archer Tech Lab Precision 300 Wireless Mouse, Dual Mode Bluetooth /2.4GHz USB Nano Dongle Wireless Ambidextrous Optical  Gaming Mouse                                                          |   842 | Flipkart | 2026-06-11 13:37:04 |
+| 28 | DELOX 115 Ambidextrous Optical  Gaming Mouse                                                                                                                                                   |  1263 | Flipkart | 2026-06-11 13:37:04 |
+| 29 | Portronics Toad One Ambidextrous Optical Mouse Rechargeable with 6 Buttons, RGB Lights                                                                                                         |   276 | Flipkart | 2026-06-11 13:37:04 |
+| 30 | Gdgift BE DIFFERENT QUIVEE MSPD Non Slip Base Mousepad                                                                                                                                         |   799 | Flipkart | 2026-06-11 13:37:04 |
+| 31 | DELOX 108 Ambidextrous Optical  Gaming Mouse                                                                                                                                                   |   315 | Flipkart | 2026-06-11 13:37:04 |
+| 32 | DELOX 109 Ambidextrous Optical  Gaming Mouse                                                                                                                                                   |   999 | Flipkart | 2026-06-11 13:37:04 |
+| 33 | ZEBRONICS Panther Ambidextrous Optical Mouse 1600DPI, Silent Ergonomic, Power Saving Precision                                                                                                 |   699 | Flipkart | 2026-06-11 13:37:04 |
+| 34 | Portronics Toad 13 Ambidextrous Optical Mouse POR 1381, POR 1382                                                                                                                               |  1499 | Flipkart | 2026-06-11 13:37:04 |
+| 35 | Logitech B175 Ambidextrous Optical Mouse Optical Tracking, 12-Months Battery Life, Ambidextrous                                                                                                |   463 | Flipkart | 2026-06-11 13:37:04 |
+| 36 | Lenovo 120 Wired Ambidextrous Optical Mouse wired mouse                                                                                                                                        |   699 | Flipkart | 2026-06-11 13:37:04 |
+| 37 | DELOX 111 Ambidextrous Optical  Gaming Mouse                                                                                                                                                   |   116 | Flipkart | 2026-06-11 13:37:04 |
+| 38 | DELOX 113 Ambidextrous Optical  Gaming Mouse                                                                                                                                                   |   349 | Flipkart | 2026-06-11 13:37:04 |
+| 39 | Arctic Fox Pureview Transparent Ambidextrous Optical  Gaming Mouse                                                                                                                             |   348 | Flipkart | 2026-06-11 13:37:04 |
+| 40 | ZEBRONICS Zeb Phero Wired Ambidextrous Optical  Gaming Mouse DPI Switch, High Precision, Plug & Play, 4 Buttons                                                                                |   599 | Flipkart | 2026-06-11 13:37:04 |
++----+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------+----------+---------------------+
+40 rows in set (0.01 sec)
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
