@@ -1,29 +1,28 @@
 WEB SCRAPING AUTOMATION PROJECT
 
 Project Title:
-Flipkart Product Search and Data Storage System
+  Flipkart Product Search and Data Storage System
 
 Project Description:
-This project is a web scraping automation system developed using Python, Selenium, BeautifulSoup, and MySQL. 
-The application automatically searches for products on Flipkart, extracts product information from the search results page, and stores the collected data in a MySQL 
-database.
-The project demonstrates browser automation, HTML parsing, data extraction, and database integration.
+  This project is a web scraping automation system developed using Python, Selenium, BeautifulSoup, and MySQL. 
+  The application automatically searches for products on Flipkart, extracts product information from the search results page, and stores the collected data in a MySQL database.
+  The project demonstrates browser automation, HTML parsing, data extraction, and database integration.
 
 Objectives:
-  -- Automate product searches on Flipkart.
-  -- Extract product information from search results.
-  -- Store extracted information in a MySQL database.
-  -- Practice web scraping and automation techniques.
-  -- Build a foundation for future price tracking and product analytics systems.
+  1) Automate product searches on Flipkart.
+  2) Extract product information from search results.
+  3) Store extracted information in a MySQL database.
+  4) Practice web scraping and automation techniques.
+  5) Build a foundation for future price tracking and product analytics systems.
 
 Technologies Used:
-  -- Python 3.10.0
-  -- Selenium
-  -- BeautifulSoup (bs4)
-  -- MySQL
-  -- Chrome Browser
-  -- ChromeDriver
-  -- VS Code
+  1) Python 3.10.0
+  2) Selenium
+  3) BeautifulSoup (bs4)
+  4) MySQL
+  5) Chrome Browser
+  6) ChromeDriver
+  7) VS Code
 
 Project Folder Structure:
   -- Web_Scraping_Automation_Project
