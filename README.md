@@ -55,3 +55,20 @@ Database Deatils:
     -- scraped_at
 
 Project Workflow:
+  1. User Input
+  2. Open Flipkart Using Selenium
+  3. Search Product
+  4. Load Search Results
+  5. Extract Product Information
+  6. Store Data in MySQL Database
+  7. Display Results
+
+Methods to Run the Project:
+  1) Run the MySQL Server
+  2) Open the Terminal in Visual Studio Code
+  3) Run the command 'python flipkart_scraper.py'
+  4) Then the command when run, opens the Flipkart Website using Selenium
+  5) The terminal asks for user input as 'Enter Product Name:'.
+  6) After the product name gets entered, with BeautifulSoup, we parse the HTML elements of the website and access the product name and price.
+  7) The details will det displayed as output in the Terminal and those details will be saved in MySQL table 'scraped_products', under the database 'ecommerce_tracker'.
+  8) We can view the table in MySQL by typing the query 'SELECT * FROM scraoed_products;'.
